@@ -125,7 +125,7 @@ resource "null_resource" "null_vol_attach"  {
       	"sudo mkfs.ext4  /dev/xvdf",
       	"sudo mount  /dev/xvdf  /var/www/html",
       	"sudo rm -rf /var/www/html/*",
-      	"sudo git clone https://github.com/aayushi0900/task1-.git /var/www/html/"
+      	"sudo git clone https://github.com/aayushi0900/Hybrid_task_1.git /var/www/html/"
    ]
  }
 }
@@ -157,7 +157,7 @@ resource "aws_s3_bucket" "mytask-tera-bucket-0906" {
 #To upload data to S3 bucket:
 resource "null_resource" "remove_and_upload_to_s3" {
   	provisioner "local-exec" {
-    	command ="/home/aayushi/Desktop/tera/mytask1/task1-/blob/master/index.html"
+    	command ="firefox index.html"
 }	
 	depends_on = [
    	aws_s3_bucket.mytask-tera-bucket-0906,
