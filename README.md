@@ -21,4 +21,4 @@ readable.
 
 => Create a Cloudfront using s3 bucket(which contains images) and use the Cloudfront URL to  update in code in /var/www/html
 
-Article Link: 
+Article Link: https://www.linkedin.com/feed/update/urn:li:activity:6678530562552143872
